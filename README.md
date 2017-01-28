@@ -1,5 +1,5 @@
 # NETStandard.Library.Extensions
 
 Extensions for missing functionality in NETStandard.Library:
-* NETStandard.Library.Extensions 1.1.0 - [NuGet package](https://www.nuget.org/packages/NETStandard.Library.Extensions/)
-* NETStandard.Library.Extensions.EntityFrameworkCore 1.0.0 - [NuGet package](https://www.nuget.org/packages/NETStandard.Library.Extensions.EntityFrameworkCore/1.0.0)
+* NETStandard.Library.Extensions [![NuGet version](https://badge.fury.io/nu/NETStandard.Library.Extensions.svg)](https://badge.fury.io/nu/NETStandard.Library.Extensions)
+* NETStandard.Library.Extensions.EntityFrameworkCore [![NuGet version](https://badge.fury.io/nu/NETStandard.Library.Extensions.EntityFrameworkCore.svg)](https://badge.fury.io/nu/NETStandard.Library.Extensions.EntityFrameworkCore)
