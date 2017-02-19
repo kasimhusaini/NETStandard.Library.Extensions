@@ -1,4 +1,4 @@
-﻿namespace NETStandard.Library.Extensions.Infrastructure.Mappings
+﻿namespace NETStandard.Library.Extensions.EntityFrameworkCore.Mappings
 {
     using Microsoft.EntityFrameworkCore;
 

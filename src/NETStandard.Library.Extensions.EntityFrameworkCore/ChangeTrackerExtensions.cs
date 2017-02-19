@@ -1,4 +1,4 @@
-﻿namespace NETStandard.Library.Extensions.Infrastructure
+﻿namespace NETStandard.Library.Extensions.EntityFrameworkCore
 {
     using System;
     using System.Collections.Generic;
@@ -6,7 +6,7 @@
     using System.Linq;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.ChangeTracking;
-    using NETStandard.Library.Extensions.Infrastructure.Interfaces;
+    using NETStandard.Library.Extensions.EntityFrameworkCore.Interfaces;
 
     /// <summary>
     /// Defines a helper class that provides extension methods over <see cref="ChangeTracker" /> object.
@@ -26,11 +26,11 @@
             }
 
             foreach (var entry in changeTracker.Entries().Where(e => e.Entity is IAuditInfo &&
-                                                                   (e.State == EntityState.Added ||
-                                                                    e.State == EntityState.Modified)))
+                                                                    (e.State == EntityState.Added ||
+                                                                     e.State == EntityState.Modified)))
             {
                 var entity = (IAuditInfo)entry.Entity;
-                if (entry.State == EntityState.Added && entity.CreatedOn == default(DateTime))
+                if (entry.State == EntityState.Added && !entity.PreserveCreatedOn)
                 {
                     entity.CreatedOn = DateTime.Now;
                 }

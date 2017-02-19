@@ -1,4 +1,4 @@
-﻿namespace NETStandard.Library.Extensions.Infrastructure.Interfaces
+﻿namespace NETStandard.Library.Extensions.EntityFrameworkCore.Interfaces
 {
     using System;
 
