@@ -1,6 +1,6 @@
 # NETStandard.Library.Extensions
 
-[![Build status](https://ci.appveyor.com/api/projects/status/lec7mbt3kp3ssf3a?svg=true)](https://ci.appveyor.com/project/flextry/netstandard-library-extensions) [![License status](https://img.shields.io/badge/license-MIT License-blue.svg)](/LICENSE)
+[![Build status](https://ci.appveyor.com/api/projects/status/lec7mbt3kp3ssf3a?svg=true)](https://ci.appveyor.com/project/flextry/netstandard-library-extensions) [![License status](https://img.shields.io/badge/license-MIT%20License-blue.svg)](LICENSE)
 
 Extensions for missing functionality in .NET Standard Library:
 * NETStandard.Library.Extensions [![NuGet version](https://badge.fury.io/nu/NETStandard.Library.Extensions.svg)](https://badge.fury.io/nu/NETStandard.Library.Extensions)
