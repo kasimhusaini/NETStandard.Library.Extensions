@@ -13,6 +13,14 @@
         /// <param name="value">The string to test.</param>
         /// <returns>true if the value parameter is null or an empty string (""); otherwise, false.</returns>
         public static bool IsNullOrEmpty(this string value) => string.IsNullOrEmpty(value);
+        
+        /// <summary>
+        /// Determines whether [is not null or empty] [the specified input].
+        /// </summary>
+        /// <returns>
+        /// 	<c>true</c> if [is not null or empty] [the specified input]; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool IsNotNullOrEmpty(this string input) => !String.IsNullOrEmpty(input);
 
         /// <summary>
         /// Indicates whether a specified string is null, empty, or consists only of white-space characters.
@@ -31,6 +39,22 @@
         /// <returns>The controller name.</returns>
         public static string GetControllerName(this string value) => !value.IsNullOrWhiteSpace() ? value.Replace("Controller", string.Empty) : string.Empty;
 
+        /// <summary>
+        /// Gets string from begining to length specified
+        /// </summary>
+        /// <param name="input">The input value</param>
+        /// <param name="length"></param>
+        /// <returns>Returns the value from begining of the string upto the length specified</returns>
+        public static string Left(this string input, int length) => input.Substring(0, length);
+        
+        /// <summary>
+        /// Gets right part of the string of the specified length
+        /// </summary>
+        /// <param name="input">The input value</param>
+        /// <param name="length">Legnth of the output string</param>
+        /// <returns>Returns the value from end of the string and of the length specified</returns>
+        public static string Right(this string input, int length) => input.Substring(input.Length - length, length);
+        
         /// <summary>
         /// Get string between given startString and endString values starting from specified index.
         /// </summary>
